@@ -1,8 +1,7 @@
 //REQUIREMENTS
 
 const express = require('express');
-//body parser
-//morgan
+
 
 const port = 8000;
 const app = express();
