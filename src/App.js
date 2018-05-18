@@ -5,6 +5,9 @@ import './App.css';
 
 import Landing from './Components/Landing';
 import Reps from './Components/Reps/Reps';
+import Rep_Profile from './Components/Reps/Rep_Profile';
+
+
 class App extends Component {
   render() {
     return (
@@ -15,7 +18,8 @@ class App extends Component {
         {/* <Landing /> */}
         <Route exact={true} path="/" component={Landing}/>
         {/* <Reps /> */}
-        <Route path="/reps" component={Reps}/>
+        <Route exact={true} path="/reps" component={Reps}/>
+        <Route path="/reps/rep/:id" component={Rep_Profile} />
       </div>
     );
   }
