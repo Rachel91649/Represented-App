@@ -3,6 +3,7 @@ import {Route, Link, Switch} from 'react-router-dom';
 //import logo from './logo.svg';
 import './App.css';
 
+import Landing from './Components/Landing';
 import Reps from './Components/Reps/Reps';
 class App extends Component {
   render() {
@@ -11,8 +12,9 @@ class App extends Component {
         <nav>
           Loging/Register
         </nav>
-        <h1>This is my homepage</h1>
-        <Reps />
+        {/* <Landing /> */}
+        <Route exact={true} path="/" component={Landing}/>
+        {/* <Reps /> */}
       </div>
     );
   }
