@@ -15,6 +15,7 @@ class App extends Component {
         {/* <Landing /> */}
         <Route exact={true} path="/" component={Landing}/>
         {/* <Reps /> */}
+        <Route path="/reps" component={Reps}/>
       </div>
     );
   }
