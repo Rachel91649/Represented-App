@@ -2,8 +2,6 @@ import React, { Component } from 'react';
 import {Route, Link, Switch} from 'react-router-dom';
 //import logo from './logo.svg';
 import './App.css';
-// ====== Grommet Imports ====== \\
-
 
 
 // ====== COMPONENTS ====== \\
@@ -17,6 +15,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
+        
         {/* <Landing /> */}
         <Route exact={true} path="/" component={Landing}/>
 

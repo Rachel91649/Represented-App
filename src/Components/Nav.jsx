@@ -7,6 +7,7 @@ const Nav = ({}) => {
     <div>
       <nav>
         <Link to="/reps">reps</Link>
+        {/* add links for home, profile, stats? login/logout */}
       </nav>
 
     </div>

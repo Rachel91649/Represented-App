@@ -1,6 +1,19 @@
 import React, { Component } from 'react';
 import { Link, Route, Switch } from 'react-router-dom';
 
+// ====== Grommet Imports ====== \\
+import Header from 'grommet/components/Header';
+import Title from 'grommet/components/Title';
+import Hero from 'grommet/components/Hero';
+import Box from 'grommet/components/Box';
+import Article from 'grommet/components/Article';
+import Section from 'grommet/components/Section';
+import Card from 'grommet/components/Card';
+import Footer from 'grommet/components/Footer';
+
+
+
+
 class Landing extends Component {
   constructor(){
     super();
@@ -10,7 +23,14 @@ class Landing extends Component {
   render() {
     return(
       <div>
-        <h1>Landing Page</h1>
+         <Header></Header>
+          <Title>Landing Page</Title>
+          <Hero></Hero>
+         
+          <Box>
+
+          </Box>
+
         {/* <!-- start slipsum code --> */}
 
         <h1>Hold on to your butts</h1>

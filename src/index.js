@@ -5,17 +5,10 @@ import './index.css';
 import App from './App';
 import registerServiceWorker from './registerServiceWorker';
 
-// import App from 'grommet/components/App';
-// import Header from 'grommet/components/Header';
 
 ReactDOM.render((
   <BrowserRouter>
-    <div>
-    
-     
-      <App />
-    
-    </div>
+    <App />
   </BrowserRouter>
 ), document.getElementById('root'));
 registerServiceWorker();
