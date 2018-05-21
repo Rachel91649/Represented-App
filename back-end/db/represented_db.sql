@@ -21,8 +21,8 @@ CREATE TABLE users (
 CREATE TABLE reps (
   id SERIAL PRIMARY KEY, 
   rep_api_id VARCHAR,
-  in_vote NUMERIC NOT NULL DEFAULT 0;
-  out_vote NUMERIC NOT NULL DEFAULT 0;
+  in_vote NUMERIC NOT NULL DEFAULT 0,
+  out_vote NUMERIC NOT NULL DEFAULT 0
 );
 
 CREATE TABLE users_reps (
