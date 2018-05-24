@@ -4,40 +4,38 @@
 // ============================================
 const express = require('express');
 const logger = require('morgan');
+const bodyParser = require('body-parser');
+const cookieParser = require('cookie-parser');
+const session = require('express-session');
+const passport = require ('passport');
+
+
 const app = express();
 const port = process.env.PORT || 3000;
+//process.env.PORT is an option value we check for to make the app scaleable for deployment.
 
 
 // ============================================
 // MiddleWare
 // ============================================
-app.use(logger('dev'));
+app.use(logger('dev')); //only use logger in dev mode and not production
+app.use(express.static('public'));
+app.use(bodyParser.urlencoded({ extended: false}));
+app.use(bodyParser.json());
 
-//REQUIREMENTS
-/*
-const express = require("express");
-const logger = require('morgan');
-const app = express();
-const port = process.env.PORT || 3000; //process.env.PORT is an option value we check for to make the app scaleable for deployment.
-*/
 
-// const bodyParser = require('body-parser');
-
-// const cookieParser = require('cookie-parser');
-// const session = require('express-session');
-// const passport = require ('passport');
 
 const users = require('./routes/users');
 const reps = require('./routes/reps');
 
 
 
-//app.use(express.static('public'));
+//
 
 
-  //only use logger in dev mode and not production
-// app.use(bodyParser.json());
-// app.use(bodyParser.urlencoded({ extended: false}));
+ 
+
+
 // app.use(cookieParser());
 
 // app.use(session({
