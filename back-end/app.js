@@ -24,13 +24,20 @@ app.use(bodyParser.urlencoded({ extended: false}));
 app.use(bodyParser.json());
 
 
-
+const index = require('./routes/index');
 const users = require('./routes/users');
 const reps = require('./routes/reps');
 
 
+//testing route
+/*
+app.get('/', (req, res) => {
+  res.send('Hello World!')
+});
+*/
 
-//
+
+
 
 
  
@@ -50,8 +57,8 @@ const reps = require('./routes/reps');
 //app.use(express.static(path.join(_dirname, 'public')));
 //app.use('/', index);
 
+// app.use('/', index);
 // app.use('/reps', reps);
-
 // app.use('/users', users);
 
 
