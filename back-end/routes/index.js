@@ -5,9 +5,7 @@ const router = express.Router();
 //GET Home Page
 
 router.get('/', function( req, res ) {
-  res.render('index', {
-    title: "Rachel's The shit!"
-  });
+  res.send('landing page');
 });
 
 

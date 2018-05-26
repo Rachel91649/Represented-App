@@ -30,11 +30,15 @@ const reps = require('./routes/reps');
 
 
 //testing route
-/*
-app.get('/', (req, res) => {
-  res.send('Hello World!')
-});
-*/
+
+// app.get('/', (req, res) => {
+//   res.send('Hello World!')
+// });
+
+app.use('/', index);
+app.use('/reps', reps);
+app.use('/users', users);
+
 
 
 
@@ -57,9 +61,7 @@ app.get('/', (req, res) => {
 //app.use(express.static(path.join(_dirname, 'public')));
 //app.use('/', index);
 
-// app.use('/', index);
-// app.use('/reps', reps);
-// app.use('/users', users);
+
 
 
 

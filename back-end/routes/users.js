@@ -17,4 +17,13 @@ const router = express.Router();
  *  - Delete a user
  */
 
+
+//GET All Reps
+
+router.get('/', function( req, res ) {
+  res.send('users index page');
+});
+
+
+
 module.exports = router;
